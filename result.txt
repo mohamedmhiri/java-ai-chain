@@ -1,0 +1,46 @@
+Goals :muguetRULE        :
+Regle {
+ numero : -3 
+ premisses : [fleur, graine]
+ conclusions : [qsdfgh]
+}RULE        :
+Regle {
+ numero : -2 
+ premisses : [fleur, graine]
+ conclusions : [azerty]
+}RULE        :
+Regle {
+ numero : -1 
+ premisses : [fleur, graine]
+ conclusions : [non cryptogame]
+}RULE        :
+Regle {
+ numero : 1 
+ premisses : [fleur, graine]
+ conclusions : [phonerogame, noncryptogame]
+}     HYPOTHESIS        
+[rhizone, fleur, 1-cotyledone, graine, qsdfgh, azerty, non cryptogame, phonerogame, noncryptogame]RULE        :
+Regle {
+ numero : -5 
+ premisses : [azerty, qsdfgh]
+ conclusions : [phonerogame, noncryptogame]
+}RULE        :
+Regle {
+ numero : -4 
+ premisses : [azerty, graine]
+ conclusions : [non cryptogame]
+}RULE        :
+Regle {
+ numero : 3 
+ premisses : [phonerogame, 1-cotyledone]
+ conclusions : [monocotyledone]
+}     HYPOTHESIS        
+[rhizone, fleur, 1-cotyledone, graine, qsdfgh, azerty, non cryptogame, phonerogame, noncryptogame, monocotyledone]RULE        :
+Regle {
+ numero : 5 
+ premisses : [monocotyledone, rhizone]
+ conclusions : [muguet]
+}     HYPOTHESIS        
+[rhizone, fleur, 1-cotyledone, graine, qsdfgh, azerty, non cryptogame, phonerogame, noncryptogame, monocotyledone, muguet]
+
+===================== but atteint =====================

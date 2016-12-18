@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/result.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/business/BackwardChaining.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/business/Chaining.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/business/ForwardChaining.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/utils/Menu.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../problemsolving/algosRecherche.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../problemsolving/src/app/Frame.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../problemsolving/src/app/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../problemsolving/src/utils/Algorithm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../problemsolving/src/utils/Util.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/app/Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/app/Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/config/AppConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/controllers/AppController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/models/Fact.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/models/Goal.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/models/Node.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/models/Rule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/utils/Algorithm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/utils/Analyzer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/utils/Binder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/utils/Util.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/config/AppConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/config/Configuration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/controllers/AppController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/models/Goal.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
