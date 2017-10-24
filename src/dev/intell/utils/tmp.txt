@@ -1,0 +1,46 @@
+in bcContains
+
+        int nb = 0;
+        boolean rest = false;
+        for( int w =0; w< words.size() ; w++ ){
+            int n = nb;
+            //System.out.println( words.get( w ) );
+            for(int j=0;j<_set.size();j++){
+                if( ! ( _set.get(j).equals( words.get( w ) ) ) ){
+                    nb++;
+                }
+            }
+
+            if( nb == n )
+                rest = true;
+
+        }
+        return rest;
+============================================
+    public List<String> bindGoal( String path){
+        try (BufferedReader in =  new BufferedReader(new FileReader( path ))) {
+            List<String> buts = new ArrayList<String>();
+            String line;
+            while( ( ( line = in.readLine() ) != null ) ){
+                line = line.replace(" ", "");
+                if( line.toLowerCase().contains( "BUT".toLowerCase() ) ){
+                    String prebuts=line.substring(line.lastIndexOf(":") + 1);
+                    if( prebuts.contains( "," ) ){
+                        String[] pre = prebuts.split(",");
+                        for (String p: pre){
+                            buts.add(p);
+                        }
+                    }
+                    else{
+                        buts.add(prebuts);
+                    }
+
+                }
+            }
+            return buts;
+        }
+        catch (IOException e) {
+            System.out.println("error" + e.getMessage());
+            return null;
+        }
+    }

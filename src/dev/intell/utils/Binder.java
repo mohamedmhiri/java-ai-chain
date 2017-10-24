@@ -8,31 +8,32 @@ import dev.intell.models.*;
 
 
 public class Binder{
-    public List<Regle> bindRegle(String path){
+
+    public List<Rule> bindRule(String path){
         
         try (BufferedReader in =  new BufferedReader(new FileReader( path ))) {
             String line;
-            List<Regle> regles = new ArrayList<Regle>();
+            List<Rule> rules = new ArrayList<Rule>();
             while((line = in.readLine()) != null) {
-                Regle regle=new Regle();
+                Rule rule =new Rule();
                 String _line=line.substring(line.lastIndexOf(":") + 1);
                 String _nbr = line.substring(1,line.indexOf(":"));
                 int nbr = Integer.parseInt(_nbr);
-                //test if "ET" is in premisses
-                String prepremisses=_line.substring(0,_line.indexOf("=>"));
-                List<String> premisses = new ArrayList<String>();
-                if(prepremisses.toLowerCase().contains("ET".toLowerCase())){
-                    String[] pre = prepremisses.split("ET");
+                //test if "ET" is in premises
+                String prepremises=_line.substring(0,_line.indexOf("=>"));
+                List<String> premises = new ArrayList<String>();
+                if(prepremises.toLowerCase().contains("ET".toLowerCase())){
+                    String[] pre = prepremises.split("ET");
                     for (String p: pre){
                         //if( !p.toLowerCase().contains("NON".toLowerCase()) ){
                             String pp = p.replace(" ","");
-                            premisses.add(pp);
+                            premises.add(pp);
                         //}
 
                     }
                 }
                 else{
-                    premisses.add(prepremisses);
+                    premises.add(prepremises);
                 }
                     
                 //test if "ET" is in conclusions
@@ -49,27 +50,29 @@ public class Binder{
                 else{
                     conclusions.add(preconclusions);
                 }
-                regle.setNumero(nbr);
-                regle.setPremisses( premisses );
-                regle.setConclusions( conclusions );
-                regles.add( regle );
+                rule.setNumber(nbr);
+                rule.setPremises( premises );
+                rule.setConclusions( conclusions );
+                rules.add(rule);
 
             }
-            return regles;
+            return rules;
         } 
         catch (IOException e) {
             e.printStackTrace();
             return null;       
         }
     }
-    public List<Fait> bindFait(String path){
+
+
+    public List<Fact> bindFact(String path){
         try (BufferedReader in =  new BufferedReader(new FileReader( path ))) {
             String line;
-            List<Fait> faits = new ArrayList<Fait>();
+            List<Fact> facts = new ArrayList<Fact>();
             while( ( ( line = in.readLine() ) != null ) && !( line.toLowerCase().contains( "BUT".toLowerCase() ) ) ) {
                 //System.out.println( line );
                 List<String> hypothesis = new ArrayList<String>();
-                Fait fait = new Fait();
+                Fact fact = new Fact();
                 if(line.contains(",")){
                     String[] pre = line.split(",");
                     for (String p: pre){
@@ -79,11 +82,10 @@ public class Binder{
                 else{
                     hypothesis.add(line);
                 }
-                fait.setExplication(0);
-                fait.setHypothesis( hypothesis );
-                faits.add( fait );
+                fact.setHypothesis( hypothesis );
+                facts.add(fact);
             }
-            return faits;    
+            return facts;
         } 
         catch (IOException e) {
             System.out.println("error" + e.getMessage());
@@ -91,31 +93,6 @@ public class Binder{
         }
     }
 
-    public List<String> bindBut( String path){
-        try (BufferedReader in =  new BufferedReader(new FileReader( path ))) {
-            List<String> buts = new ArrayList<String>();
-            String line;
-            while( ( ( line = in.readLine() ) != null ) ){
-                line = line.replace(" ", "");
-                if( line.toLowerCase().contains( "BUT".toLowerCase() ) ){
-                    String prebuts=line.substring(line.lastIndexOf(":") + 1);
-                    if( prebuts.contains( "," ) ){
-                        String[] pre = prebuts.split(",");
-                        for (String p: pre){
-                            buts.add(p);
-                        }
-                    }
-                    else{
-                        buts.add(prebuts);
-                    }
-
-                }
-            }
-            return buts;
-        }
-        catch (IOException e) {
-            System.out.println("error" + e.getMessage());
-            return null;
-        }
-    }
 }
+
+

@@ -15,20 +15,20 @@ public class ForwardDepthChaining{
 //     * returns all releasable rules
 //     * @param regles
 //     * @param hypothesis
-//     * @return List<Regle>
+//     * @return List<Rule>
 //     */
-//    public List<Regle> releasableRules(List<Regle> rules, List<String> hypothesis){
-//        List<Regle> tmpSet = new ArrayList<Regle>();
-//        for(Iterator<Regle> i = rules.iterator(); i.hasNext(); ) {
-//            Regle rule = i.next();
-//            if(util.allExists(rule.getPremisses(), hypothesis) == true)
+//    public List<Rule> releasableRules(List<Rule> rules, List<String> hypothesis){
+//        List<Rule> tmpSet = new ArrayList<Rule>();
+//        for(Iterator<Rule> i = rules.iterator(); i.hasNext(); ) {
+//            Rule rule = i.next();
+//            if(util.allExists(rule.getPremises(), hypothesis) == true)
 //                tmpSet.add(rule);
 //        }
 //        return tmpSet;
 //    }
-//    public Regle chosen (String choice, List<Regle> tmpRules, Fait fait){
+//    public Rule chosen (String choice, List<Rule> tmpRules, Fact fait){
 //
-//        Regle rule = new Regle();
+//        Rule rule = new Rule();
 //        //fifo
 //        if(choice.equals("1")){
 //            rule = tmpRules.get(0);
@@ -36,8 +36,8 @@ public class ForwardDepthChaining{
 //            int max = 0, index = -1;
 //            for(int i =0; i<tmpRules.size(); i++){
 //                for(int j = 0; j< tmpRules.get(i).getConclusions().size(); j++){
-//                    if((tmpRules.get(i).getPremisses().size() > max) && (!fait.getHypothesis().contains("non" + tmpRules.get(i).getConclusions().get(j) ))){
-//                        max = tmpRules.get(i).getPremisses().size();
+//                    if((tmpRules.get(i).getPremises().size() > max) && (!fait.getHypothesis().contains("non" + tmpRules.get(i).getConclusions().get(j) ))){
+//                        max = tmpRules.get(i).getPremises().size();
 //                        index = i;
 //                    }
 //                }
@@ -59,17 +59,17 @@ public class ForwardDepthChaining{
 //     * @param buts
 //     * @return boolean
 //     */
-//    public boolean verify(List<String> buts, List<Regle>rules,Fait fait, String choice){
+//    public boolean verify(List<String> buts, List<Rule>rules,Fact fait, String choice){
 //
 //
 //        boolean res = false;
-//        List<List<Regle>> tmpRules ;
-//        List<Regle> _rules = new ArrayList<Regle>();
+//        List<List<Rule>> tmpRules ;
+//        List<Rule> _rules = new ArrayList<Rule>();
 //        tmpRules = this.releasableRules(rules, fait.getHypothesis());
 //        while((tmpRules.size() != 0)) {
 //            int l = 0;
 //            while((l < tmpRules.size()) && (util.allExists(buts, fait.getHypothesis()) == false)){
-//                Regle rule = this.chosen(choice, tmpRules.subList(l,tmpRules.size()), fait);
+//                Rule rule = this.chosen(choice, tmpRules.subList(l,tmpRules.size()), fait);
 //                List<String> concls = rule.getConclusions();
 //                for (int j = 0; j < concls.size(); j++) {
 //                    if (!fait.getHypothesis().contains(concls.get(j))) {

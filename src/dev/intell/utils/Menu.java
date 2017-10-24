@@ -17,7 +17,7 @@ import java.io.File;
 
 public class Menu{
 
-    private static final String RESULT = "/home/mohamed/Documents/development/java/ArtificialIntelligence/chain/result.txt";
+    private static final String RESULT = "/home/mohamed/Documents/development/java/ArtificialIntelligence/chain/src/dev/intell/results/result.txt";
 
     public void menu(){
         Scanner sc = new Scanner(System.in);
@@ -33,16 +33,24 @@ public class Menu{
         int len =(f.list().length -4)/2;
         System.out.println("Select a couple of rule and fact files");
         for (int i=1;i<=len;i++){
-            System.out.println("    "+i+") base_rule"+i+"   base_fait"+i);
+            System.out.println("    "+i+") ruleBase"+i);
         }
-        int num = sc.nextInt();
-        while ((num < 1 )|| (num > len)){
+        int numR = sc.nextInt();
+        while ((numR < 1 )|| (numR > len)){
             System.out.println("Invalid argument, please enter a valid choice");
-            num = sc.nextInt();
+            numR = sc.nextInt();
         }
-        String rulePath = "/home/mohamed/Documents/development/java/ArtificialIntelligence/chain/base_regle"+num+".txt";
+        for (int i=1;i<=len;i++){
+            System.out.println("    "+i+") factBase"+i);
+        }
+        int numF = sc.nextInt();
+        while ((numF < 1 )|| (numF > len)){
+            System.out.println("Invalid argument, please enter a valid choice");
+            numF = sc.nextInt();
+        }
+        String rulePath = "/home/mohamed/Documents/development/java/ArtificialIntelligence/chain/ruleBase"+numR+".txt";
         File file = new File(rulePath);
-        String factPath = "/home/mohamed/Documents/development/java/ArtificialIntelligence/chain/base_fait"+num+".txt";
+        String factPath = "/home/mohamed/Documents/development/java/ArtificialIntelligence/chain/factBase"+numF+".txt";
         File file2 = new File(factPath);
 //        if(file.exists() && !file.isDirectory()) {
 //
@@ -50,28 +58,63 @@ public class Menu{
         //
         Chaining chaining ;
         Binder bdr = new Binder();
-        List<Regle> regles = bdr.bindRegle( rulePath );
-        List<Fait> faits = bdr.bindFait( factPath );
+        List<Rule> rules = bdr.bindRule( rulePath );
+        List<Fact> fact = bdr.bindFact( factPath );
+        int fNum =0;
+        if(numF ==2){
+            System.out.println("Chose between");
+            System.out.println("1) "+fact.get(0));
+            System.out.println("2) "+fact.get(1));
+            fNum = sc.nextInt();
+            while ((fNum < 1 )|| (fNum > 2)){
+                System.out.println("Invalid argument, please enter a valid choice");
+                fNum = sc.nextInt();
+            }
+        }
      //   List<String> words = bdr.bindBut( factPath );
         System.out.printf("give goal\n");
         String word = sc.next();
-        List<String> words = new ArrayList<String>();
-        words.add(word);
+        List<String> goal = new ArrayList<String>();
+        goal.add(word);
         if(type == 1){
             chaining = new BackwardChaining();
 
         }else{
             chaining = new ForwardChaining();
         }
-        System.out.println("Goals :");
-        for ( String re : words )
-            System.out.println( re );
-        StringBuilder result = new StringBuilder();
-        result.append("Goals :");
-        for ( String re : words )
-            result.append( re );
-        StringBuilder res =chaining.verify( words, regles, faits.get( 0 ), "1" );
-        result.append(res);
+//        System.out.println("Goals :");
+//        for ( String re : words )
+//            System.out.println( re );
+//        StringBuilder result = new StringBuilder();
+//        result.append("Goals :");
+//        for ( String re : words )
+//            result.append( re );
+        StringBuilder input = new StringBuilder();
+        Result result = new Result();
+        input.append("Knowledge Base :\nList of Rules:\n");
+        for (Rule rule: rules) {
+            input.append(rule)
+                    .append("\n");
+        }
+        input.append("List of Facts:\n")
+                .append(fact)
+                .append("\n")
+                .append("Given Goal: ");
+        if(goal.size() >1){
+            for (int i=0; i<goal.size()-1; i++) {
+                input.append(goal.get(i))
+                        .append(", ");
+            }
+            input.append(goal.get(goal.size()-1));
+        }else {
+            input.append(goal.get(0));
+        }
+
+        input.append("\nProgress:\n");
+        result=chaining.verify( goal, rules, fact.get( fNum ), "1" );
+        result.setInput(input.toString());
+
+        //result.append(res);
         System.out.println("Done!!!\n1) Save the result in a text file !\n2) Get the input here !");
         int num1 =sc.nextInt();
         while ((num1 < 1 )|| (num1 > 2)){
@@ -120,14 +163,14 @@ public class Menu{
 //        else
 //            System.out.println( "\n\n===================== but non atteint =====================" );
 
-        /*for( Regle r : regles )
+        /*for( Rule r : rules )
           System.out.println( r );
-        for( Fait f : faits )
+        for( Fact f : facts )
           System.out.println( f );*/
 
 
-        //System.out.println( regles.get(0).getPremisses().get(0) instanceof String );
-        /*List<String> res = bc.bcContains( words, regles.get(0).getPremisses() );*/
+        //System.out.println( rules.get(0).getPremises().get(0) instanceof String );
+        /*List<String> res = bc.bcContains( words, rules.get(0).getPremises() );*/
 
     }
 

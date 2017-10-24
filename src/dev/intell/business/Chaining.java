@@ -1,11 +1,12 @@
 package dev.intell.business;
 
-import dev.intell.models.Fait;
-import dev.intell.models.Regle;
+import dev.intell.models.Fact;
+import dev.intell.models.Result;
+import dev.intell.models.Rule;
 
 import java.util.List;
 
 
 public interface Chaining {
-    StringBuilder verify(List<String> but, List<Regle> regles, Fait fait, String choice);
+    Result verify(List<String> but, List<Rule> rules, Fact fact, String choice);
 }

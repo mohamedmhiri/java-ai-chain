@@ -3,7 +3,27 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/base_regle1.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/result.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ruleBase2.txt">
           <value>
             <set />
           </value>
@@ -23,7 +43,57 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/client/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/models/Fact.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/models/Fait.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/models/Regle.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/models/Result.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/models/Rule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/results/result.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/utils/Binder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/dev/intell/utils/Menu.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/utils/Util.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/dev/intell/utils/tmp.txt">
           <value>
             <set />
           </value>
@@ -53,6 +123,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../unification/src/app/Frame.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../unification/src/app/Program.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../unification/src/app/Unification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../unification/src/app/util.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/build.gradle">
           <value>
             <set />
@@ -68,12 +158,112 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/business/BackwardChaining.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/business/Chaining.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/business/ForwardChaining.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/business/ForwardDepthChaining.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/client/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/controllers/ChainingController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/models/Fait.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/models/Regle.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/models/Result.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/models/Rule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/texts/base_regle1.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/texts/ruleBase1.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/texts/ruleBase2.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/utils/Binder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/utils/Menu.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/chaining/utils/Util.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/config/AppConfiguration.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/controllers/AppController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/controllers/ChainingController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/controllers/SolvingController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/controllers/UnificationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/domain/Result.java">
           <value>
             <set />
           </value>
@@ -94,6 +284,86 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/models/Rule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/controllers/AppController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/controllers/SolvingController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/models/Fact.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/models/Goal.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/models/Node.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/models/Result.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/models/Rule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/utils/Algorithm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/utils/Analyzer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/utils/Binder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/solving/utils/Util.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/unification/controllers/UnificationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/unification/utils/Frame.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/unification/utils/Program.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/unification/utils/Unification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../javaee/ArtificialIntelligence/pbSolving/src/main/java/artificialintelligence/unification/utils/swing.java">
           <value>
             <set />
           </value>

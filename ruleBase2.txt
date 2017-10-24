@@ -1,4 +1,4 @@
-R1:phanerogame ET graine-nue=>sapin ET ombre
+R1:phanerogame ET graine=>sapin ET ombre
 R2:fleur ET graine=>phanerogame
 R3:phanerogame ET 1-cotyledone=>monocotyledone
 R4:phanerogame ET 2-cotyledone=>dicotyledone

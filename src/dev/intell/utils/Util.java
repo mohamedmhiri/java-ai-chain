@@ -17,12 +17,8 @@ public class Util{
         for( int w =0; w< words.size() ; w++ ){
             int n = nb;
             //System.out.println( words.get( w ) );
-            for(int j=0;j<_set.size();j++){
-                if( ! ( _set.get(j).equals( words.get( w ) ) ) ){
-                    nb++;
-                }
-//                else
-//                    System.out.println(_set.get(j));
+            if( ! ( _set.contains( words.get( w ) ) ) ){
+                nb++;
             }
             if( nb != n )
                 rest.add( words.get( w ) );
@@ -30,29 +26,28 @@ public class Util{
         }
         return rest;
     }
-
     /**
-     *
+     * tests weather all  words(goal) items are in
+     * _set (rules.conclusions) or not
      * @param words
-     * @param _set
+     * @param set
      * @return boolean
      */
-    public boolean bcContains( List<String> words, List<String> _set){
-        int nb = 0;
+    public boolean bcContains( List<String> words, List<String> set){
+        int nb = 0, n=0;
         boolean rest = false;
         for( int w =0; w< words.size() ; w++ ){
-            int n = nb;
-            //System.out.println( words.get( w ) );
-            for(int j=0;j<_set.size();j++){
-                if( ! ( _set.get(j).equals( words.get( w ) ) ) ){
-                    nb++;
-                }
-            }
-
-            if( nb == n )
-                rest = true;
-
+//            n = nb;
+//            for(int j=0;j<set.size();j++){
+//                if(  !( set.get(j).equals( words.get( w ) ) ) ){
+//                    nb++;
+//                }
+//            }
+            if(!set.contains(words.get(w)))
+                nb++;
         }
+        if( nb == n )
+            rest = true;
         return rest;
     }
 
@@ -78,19 +73,19 @@ public class Util{
     }
 
     /**
-     * returns regles - regle
-     * @param regles
-     * @param regle
-     * @return List<Regle>
+     * returns rules - rule
+     * @param rules
+     * @param rule
+     * @return List<Rule>
      */
-    public List<Regle> delRegle( List<Regle> regles, Regle regle ){
-        for (Iterator<Regle> iter = regles.listIterator(); iter.hasNext(); ) {
-            Regle r = iter.next();
-            if ( r.getNumero() == regle.getNumero() ) {
+    public List<Rule> delRegle(List<Rule> rules, Rule rule){
+        for (Iterator<Rule> iter = rules.listIterator(); iter.hasNext(); ) {
+            Rule r = iter.next();
+            if ( r.getNumber() == rule.getNumber() ) {
                 iter.remove();
             }
         }
-        return regles;
+        return rules;
     }
 
     public int arraySum(int[]tab){
@@ -101,4 +96,33 @@ public class Util{
     }
 
 
+    /**
+     * returns a Rule from a set of Rules
+     *
+     * @param choice
+     * @param tmpRules
+     * @param fact
+     * @return
+     */
+    public Rule chosen (String choice, List<Rule> tmpRules, Fact fact){
+
+        Rule rule = new Rule();
+        //fifo
+        if(choice.equals("1")){
+            rule = tmpRules.get(0);
+        }else{
+            int max = 0, index = -1;
+            for(int i =0; i<tmpRules.size(); i++){
+                for(int j = 0; j< tmpRules.get(i).getConclusions().size(); j++){
+                    if((tmpRules.get(i).getPremises().size() > max) && (!fact.getHypothesis().contains("non" + tmpRules.get(i).getConclusions().get(j) ))){
+                        max = tmpRules.get(i).getPremises().size();
+                        index = i;
+                    }
+                }
+
+            }
+            rule = tmpRules.get(index);
+        }
+        return rule;
+    }
 }

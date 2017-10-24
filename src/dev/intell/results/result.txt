@@ -1,0 +1,32 @@
+Knowledge Base :
+List of Rules:
+Rule { number : 1  premises : [phanerogame, graine] conclusions : [sapin, ombre]}
+Rule { number : 2  premises : [fleur, graine] conclusions : [phanerogame]}
+Rule { number : 3  premises : [phanerogame, 1-cotyledone] conclusions : [monocotyledone]}
+Rule { number : 4  premises : [phanerogame, 2-cotyledone] conclusions : [dicotyledone]}
+Rule { number : 5  premises : [monocotyledone, rhizome] conclusions : [muguet]}
+Rule { number : 6  premises : [dicotyledone] conclusions : [anemone]}
+Rule { number : 15  premises : [joli] conclusions : [non rhizome]}
+Rule { number : 7  premises : [monocotyledone, NONrhizome] conclusions : [lilas]}
+Rule { number : 8  premises : [feuille, NONfleur] conclusions : [cryptogame]}
+Rule { number : 9  premises : [cryptogame, NONracine] conclusions : [mousse]}
+Rule { number : 10  premises : [cryptogame, racine] conclusions : [fougere]}
+Rule { number : 11  premises : [NONfeuille, plante] conclusions : [thallophyte]}
+Rule { number : 12  premises : [thallophyte, chlorophylle] conclusions : [algue]}
+Rule { number : 13  premises : [thallophyte, NONchlorophylle] conclusions : [champignon, NONcomestible]}
+Rule { number : 14  premises : [NONfeuille, NONfleur, NONplante] conclusions : [colibacille]}
+List of Facts:
+[Fact { hypothesis : [fleur, graine, 2-cotyledone]}, Fact { hypothesis : [fleur, graine]}]
+Given Goal: sapin
+Progress:
+List of Rules to be processed : 
+Rule { number : 2  premises : [fleur, graine] conclusions : [phanerogame]}
+
+Comparing Rule { number : 2  premises : [fleur, graine] conclusions : [phanerogame]}
+with HYPOTHESIS[fleur, graine, phanerogame]
+List of Rules to be processed : 
+Rule { number : 1  premises : [phanerogame, graine] conclusions : [sapin, ombre]}
+
+Comparing Rule { number : 1  premises : [phanerogame, graine] conclusions : [sapin, ombre]}
+with HYPOTHESIS[fleur, graine, phanerogame, sapin, ombre]
+===Goal Found===

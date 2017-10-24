@@ -1,9 +1,3 @@
-R-5:azerty ET qsdfgh=>phonerogame ET non cryptogame
-R-4:azerty ET graine=>non cryptogame
-R-3:fleur ET graine=>qsdfgh
-R-2:fleur ET graine=>azerty
-R-1:fleur ET graine=>non cryptogame
-R0:raine=>muguet
 R1:fleur ET graine=>phonerogame ET non cryptogame
 R2:phonerogame ET gaine-nue=>sapin
 R3:phonerogame ET 1-cotyledone=>monocotyledone
